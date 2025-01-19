@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="weather-app">
+    <header class="header">
+      <h1>Weather Forecast</h1>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for a location">
+        <button id="search-button" title="Search"><i class="fa fa-search"></i></button>
+        <button id="location-button" title="Use current location"><i class="fa-solid fa-location-arrow"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="current-weather">
+        <h2>Current Weather</h2>
+        <div class="weather-info">
+          <div class="icon-and-temp">
+            <i class="weather-icon fa"></i>
+            <div>
+              <h2 id="temperature"></h2>
+              <p id="feels-like"></p>
+            </div>
+          </div>
+          <p id="description"></p>
+          <p id="location"></p>
+          <p id="date-time"></p>
+        </div>
+      </section>
+
+      <section class="weather-details">
+        <h2>Weather Details</h2>
+        <div class="details-grid">
+          <div class="detail-item">
+            <i class="fa-solid fa-tint"></i>
+            <p>Humidity: <span id="humidity"></span></p>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-wind"></i>
+            <p>Wind Speed: <span id="wind-speed"></span></p>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-cloud"></i>
+            <p>Cloud Cover: <span id="cloud-cover"></span></p>
+          </div>
+
+          <div class="detail-item">
+            <i class="fa-solid fa-eye"></i>
+            <p>Visibility: <span id="visibility"></span></p>
+          </div>
+
+          
+          <div class="detail-item">
+            <i class="fa-solid fa-temperature-high"></i>
+            <p>Pressure: <span id="pressure"></span> hPa</p>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-radiation"></i>
+            <p>UV Index: <span id="uv-index"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="forecast">
+        <h2>Forecast</h2>
+        <div class="forecast-grid" id="forecast-container"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

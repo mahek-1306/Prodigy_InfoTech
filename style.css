@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #1e90ff);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .weather-app {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  
+  .search-container input {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+    font-size: 25px;
+  }
+  
+  .search-container button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .search-container button:hover {
+    background-color: #4682b4;
+  }
+  
+  .current-weather, .weather-details, .forecast {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .current-weather h2, .weather-details h2, .forecast h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  
+  .weather-info {
+    display:block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+  
+  .icon-and-temp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .weather-icon {
+    font-size: 4rem;
+  }
+  
+  .details-grid {
+    display: grid;
+    font-size: 25px;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+  
+  .forecast-grid .forecast-item {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+  }
+  
